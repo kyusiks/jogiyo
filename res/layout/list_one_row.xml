@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true" >
+
+    <RelativeLayout
+        android:id="@+id/lay_mm"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/web_thumb"
+            android:text="제목"
+            android:textSize="17dp" />
+        
+        <ImageView
+            android:id="@+id/img_new"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/ic_new" />
+
+        <WebView
+            android:id="@+id/web_thumb"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/txt_fstInstDh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/web_thumb"
+            android:text="요청일시 : 20150101000000" />
+
+        <TextView
+            android:id="@+id/txt_nextStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_fstInstDh"
+            android:layout_below="@+id/txt_state"
+            android:text="다음단계 : 업체선정" />
+
+        <TextView
+            android:id="@+id/txt_miniTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_fstInstDh"
+            android:layout_below="@+id/txt_nextStep"
+            android:text="제목" />
+
+        <TextView
+            android:id="@+id/txt_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_fstInstDh"
+            android:layout_below="@+id/txt_fstInstDh"
+            android:text="신청업종 : 유리" />
+
+        <TextView
+            android:id="@+id/txt_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txt_site"
+            android:layout_below="@+id/txt_site"
+            android:text="진행상태 : 접수" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
